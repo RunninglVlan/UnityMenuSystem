@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 223037436910345750}
   - component: {fileID: 114956086663702478}
   - component: {fileID: 114472502755904454}
+  - component: {fileID: 7166810300034397287}
   m_Layer: 5
   m_Name: AwesomeMenu
   m_TagString: Untagged
@@ -334,6 +335,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7166810300034397287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425329359430248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: df8c6ac7ee3eb13489cfa184d8af3817, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: d62efce3ad0f0c446a3c99e1f6eea7f4,
+    type: 3}
+  m_SortingOrder: 0
 --- !u!1 &1783017279068802
 GameObject:
   m_ObjectHideFlags: 0

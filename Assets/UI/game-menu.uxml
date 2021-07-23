@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/style.uss?fileID=7433441132597879392&amp;guid=4d51b5d544ca43d2863a0ac9e5290134&amp;type=3#style" />
+    <ui:VisualElement name="image" class="menu game-menu">
+        <ui:Button text="Pause" name="pause-button" class="small-button back-button" />
+        <ui:Label text="&lt;THIS IS A GAME&gt;" name="title" class="title" />
+    </ui:VisualElement>
+</ui:UXML>

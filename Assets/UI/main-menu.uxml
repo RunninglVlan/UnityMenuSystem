@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/style.uss?fileID=7433441132597879392&amp;guid=4d51b5d544ca43d2863a0ac9e5290134&amp;type=3#style" />
+    <ui:VisualElement name="image" class="menu main-menu">
+        <ui:Label text="Welcome to the main menu" name="title" class="title default" />
+        <ui:VisualElement name="center" class="center">
+            <ui:Button text="Play" name="play-button" class="large-button" />
+            <ui:Button text="Options" name="options-button" class="large-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
