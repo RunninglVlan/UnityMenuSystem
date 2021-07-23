@@ -7,6 +7,7 @@
 /Assets/AssetStoreTools*
 
 /UserSettings
+/UIElementsSchema
 
 # Visual Studio 2015 cache directory
 /.vs/
