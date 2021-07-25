@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UIElements;
 
 public abstract class Menu<T> : Menu where T : Menu<T>
 {
@@ -48,6 +49,8 @@ public abstract class Menu : MonoBehaviour
 
 	[Tooltip("Disable menus that are under this one in the stack")]
 	public bool DisableMenusUnderneath = true;
+
+	public UIDocument document;
 
 	public abstract void OnBackPressed();
 }

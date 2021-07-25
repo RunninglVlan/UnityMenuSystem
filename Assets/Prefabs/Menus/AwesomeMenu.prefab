@@ -272,6 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyWhenClosed: 1
   DisableMenusUnderneath: 1
+  document: {fileID: 7166810300034397287}
   Background: {fileID: 114526691033577998}
   Title: {fileID: 114441892165856290}
 --- !u!223 &223037436910345750

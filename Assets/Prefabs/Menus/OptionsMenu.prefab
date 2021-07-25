@@ -61,6 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyWhenClosed: 1
   DisableMenusUnderneath: 1
+  document: {fileID: 3731692988302552735}
   Slider: {fileID: 114207691395507840}
 --- !u!223 &223402049646497122
 Canvas:

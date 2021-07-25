@@ -214,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyWhenClosed: 1
   DisableMenusUnderneath: 1
+  document: {fileID: 5137994909557658265}
 --- !u!223 &223497935270070380
 Canvas:
   m_ObjectHideFlags: 0
