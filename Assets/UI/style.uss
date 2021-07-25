@@ -1,3 +1,15 @@
+Button {
+    background-color: white;
+}
+
+Button:hover {
+    background-color: #F5F5F5;
+}
+
+Button:active {
+    background-color: #C8C8C8;
+}
+
 .menu {
     height: 100%;
 }

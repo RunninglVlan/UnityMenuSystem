@@ -3,5 +3,4 @@ Button.unity-button {
     padding: 0;
     border-color: rgba(89, 89, 89, 255);
     border-radius: 4px;
-    background-color: white;
 }
