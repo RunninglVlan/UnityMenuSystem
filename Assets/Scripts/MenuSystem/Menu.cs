@@ -2,10 +2,13 @@
 using UnityEngine.UIElements;
 
 public abstract class Menu<T> : Menu where T : Menu<T> {
+    protected VisualElement documentRoot;
+
     public static T Instance { get; private set; }
 
     protected virtual void Awake() {
         Instance = (T) this;
+        documentRoot = document.rootVisualElement;
     }
 
     protected virtual void OnDestroy() {
@@ -15,10 +18,16 @@ public abstract class Menu<T> : Menu where T : Menu<T> {
     protected static void Open() {
         if (Instance == null)
             MenuManager.Instance.CreateInstance<T>();
-        else
-            Instance.gameObject.SetActive(true);
+        else {
+            // Instance.gameObject.SetActive(true);
+            Instance.SetActive(true);
+        }
 
         MenuManager.Instance.OpenMenu(Instance);
+    }
+
+    public override void SetActive(bool value) {
+        Instance.documentRoot.style.display = value ? DisplayStyle.Flex : DisplayStyle.None;
     }
 
     protected static void Close() {
@@ -45,4 +54,5 @@ public abstract class Menu : MonoBehaviour {
     public UIDocument document;
 
     public abstract void OnBackPressed();
+    public abstract void SetActive(bool value);
 }

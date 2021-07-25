@@ -34,16 +34,20 @@ public class MenuManager : MonoBehaviour {
         if (menuStack.Count > 0) {
             if (instance.DisableMenusUnderneath) {
                 foreach (var menu in menuStack) {
-                    menu.gameObject.SetActive(false);
+                    // menu.gameObject.SetActive(false);
+                    menu.SetActive(false);
 
                     if (menu.DisableMenusUnderneath)
                         break;
                 }
             }
 
-            var topCanvas = instance.GetComponent<Canvas>();
-            var previousCanvas = menuStack.Peek().GetComponent<Canvas>();
-            topCanvas.sortingOrder = previousCanvas.sortingOrder + 1;
+            // var topCanvas = instance.GetComponent<Canvas>();
+            // var previousCanvas = menuStack.Peek().GetComponent<Canvas>();
+            // topCanvas.sortingOrder = previousCanvas.sortingOrder + 1;
+            var topDocument = instance.document;
+            var previousDocument = menuStack.Peek().document;
+            topDocument.sortingOrder = previousDocument.sortingOrder + 1;
         }
 
         menuStack.Push(instance);
@@ -82,13 +86,16 @@ public class MenuManager : MonoBehaviour {
 
         if (instance.DestroyWhenClosed)
             Destroy(instance.gameObject);
-        else
-            instance.gameObject.SetActive(false);
+        else {
+            // instance.gameObject.SetActive(false);
+            instance.SetActive(false);
+        }
 
         // Re-activate top menu
         // If a re-activated menu is an overlay we need to activate the menu under it
         foreach (var menu in menuStack) {
-            menu.gameObject.SetActive(true);
+            // menu.gameObject.SetActive(true);
+            menu.SetActive(true);
 
             if (menu.DisableMenusUnderneath)
                 break;
